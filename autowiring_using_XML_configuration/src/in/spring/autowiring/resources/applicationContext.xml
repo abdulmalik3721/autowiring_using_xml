@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="in.spring.autowiring.beans.Student" id="stdId">
+		<property name="name" value="ABDUL MALIK" />
+		<property name="rollNo" value="1544" />
+		<property name="address" ref="AddrId" />
+	</bean>
+	
+	<bean class="in.spring.autowiring.beans.Address" id="AddrId">
+	<property name="houseNo" value="12"/>
+	<property name="city" value="CHANDIGARH"/>
+	<property name="pinCode" value="207123"/>
+	</bean>
+
+</beans>
