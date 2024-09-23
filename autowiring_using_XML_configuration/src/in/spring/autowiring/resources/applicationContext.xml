@@ -13,5 +13,11 @@
 	<property name="city" value="CHANDIGARH"/>
 	<property name="pinCode" value="207123"/>
 	</bean>
+	
+	<bean class="in.spring.autowiring.beans.Address" id="addr2" autowire-candidate="false">
+	<property name="houseNo" value="165"/>
+	<property name="city" value="DELHI"/>
+	<property name="pinCode" value="76545"/>
+	</bean>
 
 </beans>
